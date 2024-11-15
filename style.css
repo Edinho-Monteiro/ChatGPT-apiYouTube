@@ -1,0 +1,237 @@
+/* Importa a fonte 'Poppins' do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    background: linear-gradient(to right, #0f1218, black, #0f1218); /* Fundo com degradê */    
+}
+/* Estilo geral do corpo da página */
+body {
+    font-family: 'Poppins', sans-serif; /* Define a fonte */
+    letter-spacing: 1px; /* Espaçamento entre as letras */
+    margin: 0;    
+    padding: 0;
+    background: linear-gradient(to right, #0f1218, black, #0f1218); /* Fundo com degradê */
+    /* background-color: #0f1218;  Opção de fundo sólido comentada */
+    color:#258849; /* Cor do texto */
+}
+
+/* Estilos do cabeçalho */
+header {
+    letter-spacing: 2px; /* Espaçamento entre letras */
+    position: sticky; /* Fixa o cabeçalho no topo ao rolar a página */
+    top: 0;
+    left: 0;
+    background-color: #020202; /* Cor de fundo do cabeçalho */
+    color: #4ade80; /* Cor do texto do cabeçalho */
+    padding: 1px;
+    text-align: center;
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+    /* box-shadow: 2px 3px 15px 2px rgba(139, 127, 145, 0.842); Sombra comentada */
+}
+
+/* Estilo para títulos */
+h1 {
+    margin: 0; /* Remove margens padrão */
+}
+
+/* Estilos da seção principal */
+main {
+    max-width: 1100px; /* Largura máxima */
+    margin: 20px auto; /* Centraliza e adiciona margem */
+    padding: 10px;
+    background: linear-gradient(to right, #0f1218, black, #0f1218); /* Fundo com degradê */
+    /* background-color: #0c0c0c; Opção de fundo sólido comentada */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); Sombra comentada */
+}
+
+/* Estilo para iframes */
+iframe {
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+    border: none; /* Remove bordas */
+}
+
+/* Estilo geral para os containers de botões */
+.buttons-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os botões quebrem linha se necessário */
+    gap: 12px; /* Espaçamento entre os botões */
+    justify-content: center; /* Centraliza os botões */
+}
+
+/* Estilo para o botão de retorno */
+.return-button {
+    margin-top: 10px; /* Espaçamento entre botões numerados e o botão "Retornar" */
+}
+
+/* Estilo para links */
+a {
+    text-decoration: none !important; /* Remove sublinhado dos links */
+    color: white !important; /* Define cor branca para o texto do link */
+}
+
+/* Estilo geral para botões */
+button {
+    font-family: 'Poppins', sans-serif; /* Define a fonte */
+    padding: 3px 15px;
+    background: linear-gradient(to right, #370144, #8616a1e7, #370144); /* Fundo com degradê */
+    color: white;
+    border: none;
+    letter-spacing: 2px;
+    border-radius: 8%; /* Define bordas arredondadas */
+    font-size: 12px; /* Tamanho de fonte responsivo */
+    width: auto; /* O botão ajusta seu tamanho ao conteúdo */
+    max-width: 100%; /* Garante que o botão não ultrapasse a largura da tela */
+    white-space: nowrap; /* Evita quebra de linha no texto */
+    transition: transform 0.9s ease; /* Transição suave ao passar o mouse */
+}
+
+/* Estilo para botões ao passar o mouse */
+button:hover {
+    width: auto; /* Evita expansão do botão */    
+    background: linear-gradient(to right, #370144, #cd5fe9e7, #370144); /* Fundo com degradê */
+}
+
+/* Estilo alternativo de botões */
+.butao {
+    padding: 5px;
+    border: none;
+    font-size: 1rem;
+    width: auto;
+    max-width: 100%;
+    white-space: nowrap; /* Evita quebra de linha */
+}
+  
+/* Ajustes para telas pequenas */
+@media (max-width: 600px) {
+  button {
+    font-size: 0.9rem; /* Reduz tamanho da fonte em telas pequenas */
+    padding: 8px 16px;
+  }
+}
+
+/* Estilo para o botão de retorno */
+.return-button button {
+    padding: 3px 15px;
+    background-color: rgba(250, 54, 5, 0.767); /* Cor do botão "Retornar" */
+    color: white;
+    text-decoration: none; /* Remove sublinhado */
+    transition: transform 0.9s ease; /* Transição suave */
+}
+
+/* Estilo para o botão de retorno ao passar o mouse */
+.return-button button:hover {
+    background-color: darkred; /* Cor ao passar o mouse */
+}
+
+/* Estilos para links dentro do container de botões */
+.buttons-container a {
+    max-width: 100%;
+    padding: 3px 15px;
+    font-size: 12px;
+    background: linear-gradient(to right, #370144, #8616a1e7, #370144); /* Fundo com degradê */
+    color: white;
+    letter-spacing: 2px;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap; /* Evita quebra de linha */
+    transition: transform 0.9s ease;
+}
+
+/* Estilo ao passar o mouse sobre os links */
+.buttons-container a:hover {
+    width: auto; /* Evita expansão do botão */
+    background: linear-gradient(to right, #370144, #cd5fe9e7, #370144); /* Fundo com degradê */
+}
+
+/* Outro container de botões */
+.buttons-container2 {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    transition: transform 0.9s ease;
+}
+
+/* Estilos para os links no segundo container */
+.buttons-container2 a {
+    max-width: 100%;
+    padding: 3px 15px;
+    font-size: 12px;
+    background: linear-gradient(to right, #6907079f, #fc05059f, #6907079f); /* Fundo com degradê */
+    color: white;
+    letter-spacing: 2px;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    transition: transform 0.9s ease;
+}
+
+/* Estilo ao passar o mouse nos links */
+.buttons-container2 a:hover {
+    background-color: #9b0a0ad2;
+}
+
+/* Estilo para o box de vídeo escondido */
+#videoBox {
+    display: none; /* Escondido inicialmente */
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #1b1b1b;
+    color: white;
+}
+
+/* Exibe o box quando a classe active é adicionada */
+#videoBox.active {
+    display: block;
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #020101;
+    color: #e4ce87;
+    text-align: center;
+    padding: 0px 0;
+    margin-top: 20px;
+}
+
+/* Estilo para links no rodapé */
+footer a {
+    color: #fd0606;
+    text-decoration: none;
+}
+
+/* Estilo ao passar o mouse sobre links no rodapé */
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para imagens */
+img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin-bottom: 35px;
+    transition: transform 0.9s ease; /* Suaviza a transição ao passar o mouse */
+}
+
+/* Estilo ao passar o mouse sobre imagens */
+img:hover {
+    transform: scale(1.4); /* Amplia a imagem */
+}
+
+/* Estilo para o container do PDF */
+.pdf-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  /* border: 1px solid #ccc; */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}

@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    margin: 0;    
+    padding: 0;
+    background: linear-gradient(to right, #0f1218, black, #0f1218);        
+    /* background-color: #0f1218; */
+    color:#e4ce87;
+}
+
+header {
+    letter-spacing: 2px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #020202;
+    color: #4ade80;
+    padding: 1px;
+    text-align: center;
+    z-index: 1000;
+    /* box-shadow: 2px 3px 15px 2px rgba(139, 127, 145, 0.842); */
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 10px;
+    background: linear-gradient(to right, #0f1218, black, #0f1218);  
+    /* background-color: #0c0c0c; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+iframe {
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+    border: none;
+}
+
+/* Ajuste geral para os botões */
+
+.buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+
+.return-button {
+    margin-top: 10px;
+        /* Espaçamento entre os botões numerados e o botão "Retornar" */
+}
+
+a {
+    text-decoration: none !important;
+    /* Remover o sublinhado dos links */
+    color: white !important;
+    /* Alterar a cor do texto do link */
+}
+
+button {
+    padding: 5px 15px;
+    background-color: #540568;
+    color: white;
+    border: none;
+    border-radius: 5%;
+    /* border-radius: 5px; */
+    font-size: 1rem; /* Tamanho de fonte responsivo */
+    width: auto; /* O botão se ajusta ao conteúdo */
+    max-width: 100%; /* Garante que o botão não ultrapasse a largura da tela */
+    white-space: nowrap; /* Evita que o texto seja dividido em várias linhas */  
+    transition: transform 0.9s ease;      
+}
+
+button:hover {
+    background-color: #c21ad8d2; /* Cor de hover */
+    font-size: 104%
+  }
+
+.butao {
+    padding: 5px 5px 5px 5px;
+    border: none;
+    font-size: 1rem; /* Tamanho de fonte responsivo */
+    width: auto; /* O botão se ajusta ao conteúdo */
+    max-width: 100%; /* Garante que o botão não ultrapasse a largura da tela */
+    white-space: nowrap; /* Evita que o texto seja dividido em várias linhas */  
+}
+  
+@media (max-width: 600px) {
+  button {
+    font-size: 0.9rem; 
+    padding: 8px 16px; 
+  }
+}
+
+.return-button button {
+    padding: 3px 15px;
+    background-color: rgba(250, 54, 5, 0.767);
+    /* Estilo do botão "Retornar" */
+    color: white;
+    /* Cor do texto do botão "Retornar" */
+    text-decoration: none;
+    /* Garantir que o sublinhado seja removido */
+    transition: transform 0.9s ease;      
+}
+
+.return-button button:hover {
+background-color: darkred; /* Efeito ao passar o mouse sobre o botão "Retornar" */
+}
+
+.buttons-container a {
+    max-width: 100%; /* Remove o limite de largura para dispositivos menores */
+    padding: 3px 15px;
+    /* Espaçamento interno maior para dar mais espaço ao texto */
+    font-size: 15px;
+    background: linear-gradient(to right, #370144, #8616a1e7, #370144);    
+    /* background-color: #540568; */
+    /* border-style: ridge; */
+    color: white;
+    letter-spacing: 2px;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    transition: transform 0.9s ease;      
+    /* Garante que o texto não quebre em múltiplas linhas */
+}
+.buttons-container a:hover {
+    width: auto; /* Não permita que o botão cresça além do seu tamanho natural */
+    max-width: none; /* Evita expansão lateral */
+    background: linear-gradient(to right, #370144, #cd5fe9e7, #370144);    
+    /* font-size: 90%;  */
+}
+
+.buttons-container2 {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    transition: transform 0.9s ease;      
+}
+
+.buttons-container2 a {
+    max-width: 100%; /* Remove o limite de largura para dispositivos menores */
+    padding: 3px 15px;
+    /* Espaçamento interno maior para dar mais espaço ao texto */
+    font-size: 15px;
+    background: linear-gradient(to right, #6907079f, #fc05059f, #6907079f);    
+    /* background-color: #fc05059f; */
+    color: white;
+    letter-spacing: 2px;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    transition: transform 0.9s ease;      
+    /* Garante que o texto não quebre em múltiplas linhas */
+}
+
+.buttons-container2 a:hover {
+    background-color: #9b0a0ad2;
+    /* font-size: 80%;  */
+    /* O botão diminui quando o mouse passa por cima */    
+}
+/* Flex */
+
+
+
+/* Final do flex */
+
+#videoBox {
+    display: none;
+    /* Esconde o box inicialmente */
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #1b1b1b;
+    color: white;
+}
+
+#videoBox.active {
+    display: block;
+    /* Exibe o box apenas quando a classe active for adicionada */
+}
+
+footer {
+    /* position: sticky;
+    bottom: 0; */
+    background-color: #020101;
+    color: #e4ce87;
+    text-align: center;
+    padding: 0px 0;
+    margin-top: 20px;
+    /* box-shadow: 5px -5px 10px 2px rgba(139, 127, 145, 0.842); */
+}
+
+footer a {
+    color: #fd0606;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100px;
+    /* margin-top: 15px; */
+    height: auto;
+    display: block;
+    margin-bottom: 35px;
+    transition: transform 0.9s ease;  
+}
+
+img:hover {
+    /* opacity: 80%; */
+    transform: scale(1.4);  
+}
+
+.pdf-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}

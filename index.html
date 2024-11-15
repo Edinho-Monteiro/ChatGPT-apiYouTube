@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="theme-color" content="#000000"> -->
+    <title>Box de API</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <header>
+        <h3>Box de API</h3>
+    </header>
+
+    <main>
+        <center><img src="./image/youTube.png" alt="ChatGPT-apiYouTube"></center>
+        <div class="buttons-container">
+            <a href="./cristao/cristao.html">Cristão</a>                          
+            <a href="./musica/musica.html">Música</a>                          
+            <a href="./programacao/programacao.html">Programação</a>           
+        </div>
+        <div class="buttons-container2">
+            <center>
+                <a href="#" onclick="abrirCampoSenha()">Acesso Restrito</a>                 
+            </center>     
+        </div>   
+        <!-- Campo de senha (oculto inicialmente) -->
+        <div id="campoSenha" style="display: none; margin-top: 10px;">
+            <center>
+            <label for="senha"></label>
+            <input type="password" id="senha" name="senha">
+            <butao onclick="verificarSenha()"></butao>
+            <!-- <button onclick="verificarSenha()">Entrar</b0utton> -->
+            </center>
+        </div>
+
+        <!-- Box para exibir as informações do vídeo -->
+        <div id="videoBox" style="margin-top: 10px; border: 1px solid #ccc; padding: 10px;">
+            <!-- As informações do vídeo aparecerão aqui -->
+        </div>
+
+        <!-- Frame para exibição do vídeo -->
+        <iframe id="videoFrame" src="" style="width: 100%; height: 500px; margin-top: 10px;"></iframe>
+
+    </main>
+
+    <footer>
+        <p>&copy; Edinho Monteiro</p>
+    </footer>
+
+</body>
+<script src="./script.js"></script>
+
+</html>

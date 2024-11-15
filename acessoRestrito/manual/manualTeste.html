@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box de API</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body>
+
+    <header>
+        <h2>Manual</h2>
+    </header>
+
+    <main>
+        <!-- <p><h3><center>Adicionar vídeo a partir do 17</center></h3></p> -->
+
+        <div class="buttons-container">
+            <center>
+            <button id="openPdfBtn">Abrir Manual</button>    
+            <a href="#" class="buttons-container" data-tooltip="" onclick="openPdf()">Fechar Manual</a>                                                  
+            </center>
+        </div>
+        
+        <div class="buttons-container2">
+            <center>
+                <a href="#" onclick= "(href='../acessoRestrito.html')">Acesso Restrito</a>            
+            </center>
+        </div>
+
+
+        <div class="pdf-container" id="pdfContainer" style="display: none;">
+            <iframe id="pdfFrame" width="100%" height="600px"></iframe>
+        </div>      
+            
+       <!-- Box para exibir as informações do vídeo -->
+       <div id="videoBox" style="margin-top: 10px; border: 1px solid #ccc; padding: 10px;">
+           <!-- As informações do vídeo aparecerão aqui -->
+       </div> 
+       <!-- Frame para exibição do vídeo -->
+       <iframe id="videoFrame" src="" style="width: 100%; height: 500px; margin-top: 10px;"></iframe>
+        
+    </main>
+
+    <footer>
+        <p>Faça dos seus Sonhos, um objetivo</p>
+    </footer>
+    <script src="../../script.js"></script>
+
+    <script>
+
+        // document.getElementById("openPdfBtn").addEventListener("click", function() {
+        //     document.getElementById("pdfContainer").style.display = "block";
+        //     document.getElementById("pdfFrame").src = "https://github.com/Edinho-Monteiro/programacao/raw/main/Apostila-Programacao-WEB-HTML-CSS.pdf";
+        // });
+
+
+        // function openPdf() {
+        //     document.getElementById("pdfContainer").style.display = "none";
+        // }
+
+document.getElementById("openPdfBtn").addEventListener("click", function() {
+    var pdfContainer = document.getElementById("pdfContainer");
+    var pdfFrame = document.getElementById("pdfFrame");
+  
+
+    pdfFrame.src = "../manual/Apostila-Programacao-WEB-HTML-CSS (3).pdf";
+  
+
+    pdfContainer.style.display = "block";
+  });
+
+    </script>
+
+</body>
+
+</html>

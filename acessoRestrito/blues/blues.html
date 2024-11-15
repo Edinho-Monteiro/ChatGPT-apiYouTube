@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box de API</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body>
+
+    <header>
+        <h2>Blues</h2>
+    </header>
+
+    <main>
+        <!-- <p><h3><center>Adiocionar vídeo a partir do 17</center></h3></p> -->
+
+        <div class="buttons-container">
+                <a href="#"onmouseover="carregarInfoVideo('glUuGgtmxb4')" onmouseout="limparInfoVideo()" onclick="openVideo('https://www.youtube.com/embed/glUuGgtmxb4')">01</a>
+                <a href="#"onmouseover="carregarInfoVideo('e5Rnzp1WW8g')" onmouseout="limparInfoVideo()" onclick="openVideo('https://www.youtube.com/embed/e5Rnzp1WW8g')">02</a>
+                <a href="#"onmouseover="carregarInfoVideo('iL56JqMBwQg')" onmouseout="limparInfoVideo()" onclick="openVideo('https://www.youtube.com/embed/iL56JqMBwQg')">03</a>
+                <a href="#"onmouseover="carregarInfoVideo('Bzl6AOIsXco')" onmouseout="limparInfoVideo()" onclick="openVideo('https://www.youtube.com/embed/Bzl6AOIsXco')">04</a>
+                <a href="#"onmouseover="carregarInfoVideo('0cJ9f7wWt48')" onmouseout="limparInfoVideo()" onclick="openVideo('https://www.youtube.com/embed/0cJ9f7wWt48')">05</a>
+                <a href="#"onmouseover="carregarInfoVideo('olPzSuBbkSY')" onmouseout="limparInfoVideo()" onclick="openVideo('https://www.youtube.com/embed/olPzSuBbkSY')">06</a>
+                <a href="#"onmouseover="carregarInfoVideo('4TXGM6BOPeY')" onmouseout="limparInfoVideo()" onclick="openVideo('https://www.youtube.com/embed/4TXGM6BOPeY')">07</a>
+                <a href="#"onmouseover="carregarInfoVideo('HErvch4jyN0')" onmouseout="limparInfoVideo()" onclick="openVideo('https://www.youtube.com/embed/HErvch4jyN0')">08</a>
+                <a href="#"onmouseover="carregarInfoVideo('7Bdx5I9K0vo')" onmouseout="limparInfoVideo()" onclick="openVideo('https://www.youtube.com/embed/7Bdx5I9K0vo')">09</a>
+                <a href="#"onmouseover="carregarInfoVideo('glUuGgtmxb4')" onmouseout="limparInfoVideo()" onclick="openVideo('https://www.youtube.com/embed/glUuGgtmxb4')">10</a>
+                <!-- <a href="#"onmouseover="carregarInfoVideo('00')" nmouseout="limparInfoVideo()" onclick="openVideo('https://www.youtube.com/embed/00')">1</a> -->
+        </div>
+        
+        <div class="buttons-container2">
+            <center>
+                <a href="#" onclick= "(href='../acessoRestrito.html')">Acesso Restrito</a>            
+            </center>
+        </div>
+            
+       <!-- Box para exibir as informações do vídeo -->
+       <div id="videoBox" style="margin-top: 10px; border: 1px solid #ccc; padding: 10px;">
+           <!-- As informações do vídeo aparecerão aqui -->
+       </div> 
+       <!-- Frame para exibição do vídeo -->
+       <iframe id="videoFrame" src="" style="width: 100%; height: 500px; margin-top: 10px;"></iframe>
+        
+    </main>
+
+    <footer>
+        <p>Faça dos seus Sonhos, um objetivo</p>
+    </footer>
+    <script src="../../script.js"></script>
+
+</body>
+
+</html>
